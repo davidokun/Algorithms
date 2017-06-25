@@ -1,9 +1,9 @@
-package com.singletonapps.algorithms.sort.bubble;
+package com.singletonapps.algorithms.sort;
 
 /**
  * Bubble Sort Algorithm
  *
- * Complexity = O(n^2) -> Quadratic
+ * Complexity = O(n^2) -> Quadratic -> Stable
  */
 public class BubbleSort {
 

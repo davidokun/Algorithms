@@ -1,4 +1,4 @@
-package com.singletonapps.algorithms.sort.bubble;
+package com.singletonapps.algorithms.sort;
 
 import org.junit.Test;
 

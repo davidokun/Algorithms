@@ -24,8 +24,8 @@ public class BubbleSort {
      * @param myArray unsorted array
      */
     public static void bubbleSort(int[] myArray) {
-        for (int lastUnsortedIndex = myArray.length; lastUnsortedIndex > 0; lastUnsortedIndex--) {
-            for (int i = 0; i < myArray.length - 1; i++) {
+        for (int lastUnsortedIndex = myArray.length - 1; lastUnsortedIndex > 0; lastUnsortedIndex--) {
+            for (int i = 0; i < lastUnsortedIndex; i++) {
                 if (myArray[i] > myArray[i + 1]) {
                     swap(myArray, i, i + 1);
                 }

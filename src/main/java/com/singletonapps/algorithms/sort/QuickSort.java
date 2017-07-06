@@ -24,7 +24,7 @@ public class QuickSort {
      * @param start beginning of the array
      * @param end end of the array
      */
-    private static void quickSort(int[] input, int start, int end) {
+    public static void quickSort(int[] input, int start, int end) {
 
         // If input has only one element
         if (end - start < 2) {
@@ -36,7 +36,7 @@ public class QuickSort {
         quickSort(input, pivotIndex + 1, end);
     }
 
-    private static int partition(int[] input, int start, int end) {
+    public static int partition(int[] input, int start, int end) {
 
         int pivot = input[start];
         int i = start;

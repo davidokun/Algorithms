@@ -11,9 +11,9 @@ public class MergeSort {
 
         int[] intArray = { 20, 35, -15, 7, 55, 1, -22 };
 
-        mergeSort(intArray, 0, intArray.length);
+        int[] sorted = mergeSort(intArray, 0, intArray.length);
 
-        for (int anIntArray : intArray) {
+        for (int anIntArray : sorted) {
             System.out.print(anIntArray + " ");
         }
 
@@ -25,10 +25,10 @@ public class MergeSort {
      * @param start beginning of the array
      * @param end end of the array
      */
-    private static void mergeSort(int[] input, int start, int end) {
+    public static int[] mergeSort(int[] input, int start, int end) {
 
         if (end - start < 2) {
-            return;
+            return input;
         }
 
         int mid = (start + end) / 2;
@@ -39,9 +39,11 @@ public class MergeSort {
 
         /* Merge phase */
         merge(input, start, mid, end);
+
+        return input;
     }
 
-    private static void merge(int[] input, int start, int mid, int end) {
+    public static void merge(int[] input, int start, int mid, int end) {
 
         if (input[mid - 1] <= input[mid]) {
             return;

@@ -11,9 +11,9 @@ public class QuickSort {
 
         int[] intArray = { 20, 35, -15, 7, 55, 1, -22 };
 
-        quickSort(intArray, 0, intArray.length);
+        int[] sorted = quickSort(intArray, 0, intArray.length);
 
-        for (int anIntArray : intArray) {
+        for (int anIntArray : sorted) {
             System.out.print(anIntArray + " ");
         }
     }
@@ -24,16 +24,18 @@ public class QuickSort {
      * @param start beginning of the array
      * @param end end of the array
      */
-    public static void quickSort(int[] input, int start, int end) {
+    public static int[] quickSort(int[] input, int start, int end) {
 
         // If input has only one element
         if (end - start < 2) {
-            return;
+            return input;
         }
 
         int pivotIndex = partition(input, start, end);
         quickSort(input, start, pivotIndex);
         quickSort(input, pivotIndex + 1, end);
+
+        return input;
     }
 
     public static int partition(int[] input, int start, int end) {

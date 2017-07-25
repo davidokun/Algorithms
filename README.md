@@ -5,13 +5,13 @@ Several Algorithms solutions
 # Sorting Algorithms
 
 
-| Algorithm      | Time Complexity |
-| -------------- | :-------------- |
-| Bubble Sort    | O(n^2)          |
-| Selection Sort | O(n^2)          |
-| Insertion Sort | O(n^2)          |
-| Shell Sort     | O(n^2)          |
-| Merge Sort     | O(n log n)      |
-| Quick Sort     | O(n log n)      |
-| Counting Sort  | O(n)            |
-| Radix Sort     | O(n)            | 
+| Algorithm      | Time Complexity | Description |
+| -------------- | :-------------- | ------------|
+| Bubble Sort    | O(n^2)          | Quadratic   |
+| Selection Sort | O(n^2)          | Quadratic   |
+| Insertion Sort | O(n^2)          | Quadratic   |
+| Shell Sort     | O(n^2)          | Quadratic   |
+| Merge Sort     | O(n log n)      | Logarithmic |
+| Quick Sort     | O(n log n)      | Logarithmic |
+| Counting Sort  | O(n)            | Linear      |
+| Radix Sort     | O(n)            | Linear      |

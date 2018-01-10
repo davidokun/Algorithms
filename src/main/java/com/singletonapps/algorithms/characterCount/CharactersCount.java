@@ -20,6 +20,11 @@ public class CharactersCount {
         Scanner scan = new Scanner(System.in);
         String input = scan.nextLine();
 
+        System.out.println(hashString(input));
+
+    }
+
+    public static String hashString(String input) {
         int count = 0;
         Character last = null;
         StringBuilder output = new StringBuilder();
@@ -42,12 +47,9 @@ public class CharactersCount {
         output.append(last).append(count);
 
         if (output.length() > input.length()) {
-            System.out.println(input);
+            return input;
         } else {
-            System.out.println(output);
+            return output.toString();
         }
-
-
-
     }
 }
